@@ -6,6 +6,8 @@
     <title>Strive Edu</title>
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/ef93103e42.js" crossorigin="anonymous"></script>
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,11 +56,10 @@
         <!-- Slider section start -->
         <section class="">
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-          
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./images/cover/cover-1.png" class="d-block w-100" alt="...">
-                <div class="container ">
+                <div class="container">
                   <div class="carousel-caption h-100 d-flex flex-column align-items-center justify-content-center">
                     <h1 class="text-white fw-bold display-3">Get Started Digital Learning</h1>
                   <p class="text-center text-white py-2 lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -243,17 +244,17 @@
             <div class="card mb-3 border-0">
               <div class="row g-0">
                 <div class="col-md-5">
-                  <img src="./images/working.png" alt="">
+                  <img class="img-fluid" src="./images/working.png" alt="">
                 </div>
                 <div class=" col-md-7 p-lg-5 p-sm-3 d-flex align-items-xl-center">
-                  <div class="card-body">
+                  <div class="card-body sm: ps-0" style="padding-left: 130px;">
                     <h2 class="fw-semibold display-6 py-6">Explore The E-Learning Institute</h2>
                     <p class="explore-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure.
                     <span class="d-lg-none"></span> 
                     <span class="see-more d-lg-none">See More</span>
                   </p>
                   <p class="card-text d-none d-lg-block">Anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined.</p>
-                  <div class="row row-cols-2 row-cols-3">
+                  <div class="row row-cols-2 row-cols-2">
                     <div class="col">
                       <h2 mb-0 fw-semibold display-6>3.2K+</h2>
                       <p>Online Course</p>
@@ -278,41 +279,34 @@
         <!-- Exploring section end -->
 
         <!-- Join section start -->
-        <section class="container mt-5" id="join-section">
-          <div class="join-wrapper  bg-info rounded py-5 px-4">
+        <section class="container mt-5" id="join-us-section">
+          <div class="ready-to-join-wrapper  bg-info rounded py-5 px-4">
             <div class="row g-3 py-4 px-sm-5 d-flex align-items-center">
               <div class="col-lg-6 text-center text-lg-start">
                 <h2 class="text-white fw-semibold display-6">Ready to Join</h2>
                 <p class="text-white">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
               </div>
               <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
-                <a class="bg-white rounded p-2 text-info fw-bold"href="" data-bs-toggle="modal" data-bs-target="#register">Register Now</a>
+                <button type="button" class="btn btn-outline-info bg-white text-info fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Register Now
+                </button>
               </div>
-              <div class="modal" id="#register" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
-                <div class="dialog-box">
-                  <div class="modal-text rounded-4 shadow">
-                    <div class="modal-header p-5 pb-4 border-bottom-0">
-                      <h2 class="fw-semibold">Registration Now</h2>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+              <!-- Button trigger modal -->
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Register Now</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-aria p-5 pt-0">
-                      <form>
-                        <div class="form-float mb-3">
-                          <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@gmail.com">
-                          <label for="floatingInput">Email Address</label>
-                        </div>
-                        <div class="form-float mb-3">
-                          <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="password">
-                          <label for="floatingPassword">Password</label>
-                        </div>
-                        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Register</button>
-                        <small class="text-muted">
-                          By Clicking register, you agree to the
-                          <a href="#">terms and condition</a>
-                        </small>
-                      </form>
+                    <div class="floating mb-3">
+                      <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="Email Address" autocomplete="off">
+                      <input type="password" class="form-control rounded-3" id="floatingInput" placeholder="password" autocomplete="off">
                     </div>
-                    <div class="footer">
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                       <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
@@ -323,6 +317,9 @@
           </div>
         </section>
         <!-- Join section end -->
+        <!-- Student Success section start -->
+        
+        <!-- Student Success section end -->
 
         <!-- frequently ask question start -->
         <section>
@@ -395,6 +392,58 @@
         </section>
 
         <!-- frequently ask question end -->
+
+        <!-- Companies logo section start -->
+        <section class="companies-logo d-none d-lg-block pb-5">
+          <div class="container">
+            <h2 class="fw-bold display-5 py-2 text-center py-4">Trusted by over 800+ companies</h2>
+            <div class="row gx-4 mt-0 d-flex align-items-center">
+              <div class="col">
+                <img src="./images/company/company-1.png" alt="">
+              </div>
+              <div class="col">
+                <img src="./images/company/company-2.png" alt="">
+              </div>
+              <div class="col">
+                <img src="./images/company/company-3.png" alt="">
+              </div>
+              <div class="col">
+                <img src="./images/company/company-4.png" alt="">
+              </div>
+              <div class="col">
+                <img src="./images/company/company-5.png" alt="">
+              </div>
+              <div class="col">
+                <img src="./images/company/company-6.png" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Companies logo section start -->
+        <!-- Footer section start -->
+        <footer class="py-5 bg-dark text-white text-center d-flex flex-column justify-content-center align-items-center">
+          <div class="py-3">
+            <h3>Strive Edu</h3>
+            <p>Office 41, Zawaya Buildin, Ghala Muscat, </p>
+            <p>Sultanate of Oman</p>
+            <p>Privacy Policy  |   Terms of use </p>
+          </div>
+          <div class="social-icon  mt-2">
+            <a href="#" class="btn-floating btn-sm text-white text-center">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 20px;">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 20px;">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 20px;">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </footer>
+        <!-- Footer section end -->
         
     </header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
